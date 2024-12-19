@@ -10,7 +10,7 @@ const Read = ({ close , id }) => {
   }, [] )
   return (
     <Modal close={close} >
-      <div className='min-w-80 max-w-80 md:max-w-fit flex items-stretch flex-col  bg-white p-5 rounded-lg '>
+      <div className='min-w-72 max-w-80 md:max-w-fit flex items-stretch flex-col  bg-white p-5 rounded-lg '>
         <p className={`text-xl ${ studentSelect['status'] === 'Nouveau' ? 'text-blue-500' : studentSelect['status'] === 'Transfert' ? 'text-cyan-500' : 'text-red-500' } text-center font-semibold mb-5`}>Vos informations</p>
         <div className='flex md:flex-row flex-col gap-1 mb-2'>
           <p className={` ${ studentSelect['status'] === 'Nouveau' ? 'text-blue-500' : studentSelect['status'] === 'Transfert' ? 'text-cyan-500' : 'text-red-500' } underline `}>Nom :</p>
