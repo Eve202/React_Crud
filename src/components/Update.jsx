@@ -86,7 +86,7 @@ const Update = ({ close , id }) => {
                 </select>
             </div>
             <div className='mb-4' >
-                <label htmlFor="status">Statue</label>
+                <label htmlFor="status">Statut</label>
                 <select value={updateStd["status"]} onChange={(e) => setUpdateStd(prev => ({...prev, status : e.target.value}))} name="status" id="status" className='bg-blue-50 block w-full mt-2 border-b-2 border-blue-300 outline-none  px-2 py-1.5' >
                     <option value="Nouveau" >Nouveau</option>
                     <option value="Transfert">Transfert</option>

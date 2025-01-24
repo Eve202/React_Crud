@@ -29,7 +29,7 @@ const Read = ({ close , id }) => {
           <p>{studentSelect['email']}</p>
         </div>
         <div className='flex md:flex-row flex-col gap-1 mb-2'>
-          <p className={` ${ studentSelect['status'] === 'Nouveau' ? 'text-blue-500' : studentSelect['status'] === 'Transfert' ? 'text-cyan-500' : 'text-red-500' } underline `} >Status :</p>
+          <p className={` ${ studentSelect['status'] === 'Nouveau' ? 'text-blue-500' : studentSelect['status'] === 'Transfert' ? 'text-cyan-500' : 'text-red-500' } underline `} >Statut :</p>
           <p>{studentSelect['status']}</p>
         </div>
         <button onClick={() => close()} className={` ${ studentSelect['status'] === 'Nouveau' ? 'bg-blue-500' : studentSelect['status'] === 'Transfert' ? 'bg-cyan-500' : 'bg-red-500' } text-white px-3 py-1.5 rounded-md self-end `} >Ok</button>
