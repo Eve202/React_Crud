@@ -22,7 +22,7 @@ const Read = ({ close , id }) => {
         </div>
         <div className='flex md:flex-row flex-col gap-1 mb-2'>
           <p className={` ${ studentSelect['status'] === 'Nouveau' ? 'text-blue-500' : studentSelect['status'] === 'Transfert' ? 'text-cyan-500' : 'text-red-500' } underline `} >Classe :</p>
-          <p>{studentSelect['classe']}</p>
+          <p>{studentSelect['class']}</p>
         </div>
         <div className='flex md:flex-row flex-col gap-1 mb-2'>
           <p className={` ${ studentSelect['status'] === 'Nouveau' ? 'text-blue-500' : studentSelect['status'] === 'Transfert' ? 'text-cyan-500' : 'text-red-500' } underline `} >email :</p>

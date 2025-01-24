@@ -3,12 +3,11 @@ import { v4 as uuid } from 'uuid'
 
 import Modal from './Modal'
 const Add = ({ close }) => {
-    const [fetchAll, setFetchAll] = useState()
     const [newStd, setNewStd] = useState({
         firstname: '',
         lastname: '',
         email: '',
-        classe: '6 ème',
+        class: '6 ème',
         status: 'Nouveau',
     })
     const [error, setError] = useState({
@@ -88,8 +87,8 @@ const Add = ({ close }) => {
                         {error['state'] && <p className='text-sm text-red-600'>{error['email']}</p>}
                     </div>
                     <div className='mb-4' >
-                        <label htmlFor="classe">Classe</label>
-                        <select onChange={(e) => setNewStd(prev => ({ ...prev, classe: e.target.value }))} name="classe" id="classe" className='bg-blue-50 block w-full mt-2 border-b-2 border-blue-300 outline-none  px-2 py-1.5' >
+                        <label htmlFor="class">Classe</label>
+                        <select onChange={(e) => setNewStd(prev => ({ ...prev, class: e.target.value }))} name="class" id="class" className='bg-blue-50 block w-full mt-2 border-b-2 border-blue-300 outline-none  px-2 py-1.5' >
                             <option value="6 ème"  >6 ème</option>
                             <option value="5 ème">5 ème</option>
                             <option value="4 ème">4 ème</option>
@@ -97,7 +96,7 @@ const Add = ({ close }) => {
                         </select>
                     </div>
                     <div className='mb-4' >
-                        <label htmlFor="status">Statue</label>
+                        <label htmlFor="status">Statut</label>
                         <select onChange={(e) => setNewStd(prev => ({ ...prev, status: e.target.value }))} name="status" id="status" className='bg-blue-50 block w-full mt-2 border-b-2 border-blue-300 outline-none  px-2 py-1.5' >
                             <option value="Nouveau" >Nouveau</option>
                             <option value="Transfert">Transfert</option>
